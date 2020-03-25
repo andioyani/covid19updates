@@ -19,7 +19,7 @@ export class AppComponent {
   	//let language:string = (navigator.language != 'en' && navigator.language != 'es') ? navigator.language != 'es' :  ;
 
   	//this.translate.setDefaultLang('en');
-	translate.setDefaultLang('en');
+	translate.setDefaultLang('es');
   }
 
   //messagesList:{content:string}[] = messages;
