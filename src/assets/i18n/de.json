@@ -25,13 +25,12 @@
         "about":"Über"
   },
 
-    "home" : {
-      "title" : "Wiederhergestellt",
-      "welcome_title" : "Home",
-      "welcome_text" : "Home"
-
+  "home" : {
+    "title" : "Home",
+    "welcome_title" : "CoVid 19 Reports",
+    "welcome_text" : "Based on John Hopkins University updated data.",
+    "daily_report_link": "Go to Daily Report"
   }
-
 
 
 }
