@@ -16,7 +16,10 @@ export class AppComponent {
 
   constructor (private httpService: HttpClient, private translate: TranslateService) {
   	//console.log(navigator.language);
-	translate.setDefaultLang(navigator.language);
+  	//let language:string = (navigator.language != 'en' && navigator.language != 'es') ? navigator.language != 'es' :  ;
+
+  	//this.translate.setDefaultLang('en');
+	translate.setDefaultLang('en');
   }
 
   //messagesList:{content:string}[] = messages;
