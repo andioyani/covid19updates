@@ -1,0 +1,22 @@
+{
+
+
+	"daily_report": {
+	    "title": "Daily Report",
+	    "choose_country": "Choose Country",
+
+  	    "argentina": "Argentina",
+  	    "spain": "Spain",
+  	    "italy": "Italy",
+  	    "germany": "Germany",
+  	    "us": "United States",
+  	    "china": "China",
+
+  	    "date":"Date",
+  	    "infected":"Infected",
+  	    "dead":"Dead",
+  	    "recovered":"Recovered"
+	}
+
+
+}
