@@ -1,6 +1,7 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { HomeComponent } from './components/home/home.component';
 import { DailyreportComponent } from './components/dailyreport/dailyreport.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -8,6 +9,7 @@ import { InformationComponent } from './components/information/information.compo
 
 const appRoutes: Routes = [
 	{path: '', component: DailyreportComponent },
+	{path: 'home', component: HomeComponent },
 	{path: 'daily', component: DailyreportComponent },
 	{path: 'information', component: InformationComponent },
 	{path: 'contact', component: ContactComponent },

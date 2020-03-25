@@ -1,0 +1,37 @@
+{
+
+	"daily_report": {
+	    "title": "Tagesbericht",
+	    "choose_country": "Land auswählen",
+
+  	    "argentina": "Argentina",
+  	    "spain": "Spain",
+  	    "italy": "Italy",
+  	    "germany": "Deutschland",
+  	    "us": "USA",
+  	    "china": "China",
+
+    		"date":"Datum",
+        "infected":"Infiziert",
+        "dead":"Todesfälle",
+        "recovered":"Wiederhergestellt"
+	},
+
+  "navigation" : {
+        "home":"Wiederhergestellt",
+        "daily_report":"Tagesbericht",
+        "information":"Information",
+        "contact":"Kontakt",
+        "about":"Über"
+  },
+
+    "home" : {
+      "title" : "Wiederhergestellt",
+      "welcome_title" : "Home",
+      "welcome_text" : "Home"
+
+  }
+
+
+
+}

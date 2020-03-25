@@ -14,6 +14,7 @@ import { DailyreportComponent } from './components/dailyreport/dailyreport.compo
 import { InformationComponent } from './components/information/information.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AboutComponent } from './components/about/about.component';
     DailyreportComponent,
     InformationComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

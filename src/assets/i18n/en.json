@@ -24,6 +24,12 @@
         "information":"Information",
         "contact":"Contact",
         "about":"About Us"
+  },
+
+  "home" : {
+    "title" : "Home",
+    "welcome_title" : "Home",
+    "welcome_text" : "Home"
   }
 
 

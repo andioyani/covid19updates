@@ -36,9 +36,13 @@ export class DailyreportComponent implements OnInit {
 					
 			    	data["confirmedDiff"] = (data.confirmed > confirmedDiff) ? "+" + (data.confirmed - confirmedDiff) : "0";
 			    	data["deathsDiff"] = (data.deaths > deathsDiff) ? "+" + (data.deaths - deathsDiff) : "0";
-			    	data["recoveredDiff"] = (data.recovered > recoveredDiff) ? "+" + (data.recovered - recoveredDiff) : "0";
-						
-			    	data["deathRatio"] = (data.deaths/data.confirmed) * 100;
+			    	data["recoveredDiff"] = (data.recovered > recoveredDiff) ? "+" + (data.recovered - recoveredDiff) : "0";					
+
+					confirmedDiff = data.confirmed;						
+					deathsDiff = data.deaths;						
+					recoveredDiff = data.recovered;						
+
+			    	data["deathRatio"] = (data.deaths < 1) ? 0 : (data.deaths/data.confirmed) * 100;
 
 					confirmedDiff = data.confirmed;						
 					deathsDiff = data.deaths;						
