@@ -1,0 +1,31 @@
+  <div class="container mt-3">
+    <h1 class="text-center">{{ 'daily_report.title' | translate }}</h1>        
+
+    <select class="custom-select" (change)="onChange($event.target.value)">
+      <option value="">{{ 'daily_report.choose_country' | translate }}</option>
+      <option value="Argentina">{{ 'daily_report.argentina' | translate }}</option>
+      <option value="Spain">{{ 'daily_report.spain' | translate }}</option>
+      <option value="Italy">{{ 'daily_report.italy' | translate }}</option>
+      <option value="Germany">{{ 'daily_report.germany' | translate }}</option>
+      <option value="US">{{ 'daily_report.us' | translate }}</option>
+      <option value="China">{{ 'daily_report.china' | translate }}</option>
+    </select>
+
+    <table class="table" *ngIf="confirmedCases">
+      <thead>
+        <tr>
+          <th>{{ 'daily_report.date' | translate}}</th><th>{{'daily_report.infected' | translate}}</th><th>{{'daily_report.dead' | translate}}</th><th>{{'daily_report.recovered' | translate}} </th>
+        </tr>
+      </thead>
+        <tr *ngFor="let case of confirmedCases; let i = index">
+          <td >{{ i.confirmed }} {{ case.date | date:'dd/MM'}}</td>
+          <td>{{ case.confirmed }} ({{ case.confirmedDiff }}) </td>
+          <td>{{ case.deaths }} ({{ case.deathsDiff }}) {{ case.deathRatio | number:'1.2-2' }}%</td>
+          <td>{{ case.recovered }} ({{ case.recoveredDiff }})</td>
+        </tr>
+      <tbody>
+
+      </tbody>
+    </table>
+
+  </div>

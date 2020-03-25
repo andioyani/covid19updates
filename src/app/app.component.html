@@ -1,35 +1,33 @@
-  <div class="container mt-3">
-    <h1 class="text-center">{{ 'daily_report.title' | translate }}</h1>        
-    <!--
-    <button (click)="useLanguage('es')">Español</button>
-    <button (click)="useLanguage('en')">English</button>
-    -->
-
-    <select class="custom-select" (change)="onChange($event.target.value)">
-      <option value="">{{ 'daily_report.choose_country' | translate }}</option>
-      <option value="Argentina">{{ 'daily_report.argentina' | translate }}</option>
-      <option value="Spain">{{ 'daily_report.spain' | translate }}</option>
-      <option value="Italy">{{ 'daily_report.italy' | translate }}</option>
-      <option value="Germany">{{ 'daily_report.germany' | translate }}</option>
-      <option value="US">{{ 'daily_report.us' | translate }}</option>
-      <option value="China">{{ 'daily_report.china' | translate }}</option>
-    </select>
-
-    <table class="table" *ngIf="confirmedCases">
-      <thead>
-        <tr>
-          <th>{{ 'daily_report.date' | translate}}</th><th>{{'daily_report.infected' | translate}}</th><th>{{'daily_report.dead' | translate}}</th><th>{{'daily_report.recovered' | translate}} </th>
-        </tr>
-      </thead>
-        <tr *ngFor="let case of confirmedCases">
-          <td >{{ case.date | date:'dd/MM'}}</td>
-          <td>{{ case.confirmed }}</td>
-          <td>{{ case.deaths }}</td>
-          <td>{{ case.recovered }}</td>
-        </tr>
-      <tbody>
-
-      </tbody>
-    </table>
-
-  </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">CoVid</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['']">{{ 'navigation.home' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/daily']">{{ 'navigation.daily_report' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/information']">{{ 'navigation.information' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']">{{ 'navigation.contact' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']">{{ 'navigation.about' | translate}}</a>
+        </li>
+      </ul>    
+      
+      <form class="form-inline my-2 my-lg-0">
+        <img *ngIf="language == 'es'" class="rounded-circle" style="width: 35px; height: 35px" src="./assets/images/flags/english.png" (click)="useLanguage('en')">
+        <img *ngIf="language == 'en'" class="rounded-circle" style="width: 35px; height: 35px" src="./assets/images/flags/spanish.png" (click)="useLanguage('es')">
+      </form>   
+    </div>        
+  </nav>
+  <router-outlet></router-outlet>

@@ -11,11 +11,18 @@
   	    "us": "Estados Unidos",
   	    "china": "China",
 
-		"date":"Fecha",
-  	    "infected":"Infectados",
-  	    "dead":"Muertes",
-  	    "recovered":"Altas"
+    		"date":"Fecha",
+        "infected":"Infectados",
+        "dead":"Muertes",
+        "recovered":"Altas"
+	},
 
-	}
+  "navigation" : {
+        "home":"Inicio",
+        "daily_report":"Informe Diario",
+        "information":"Información Útil",
+        "contact":"Contactos",
+        "about":"Acerca de"
+  }
 
 }

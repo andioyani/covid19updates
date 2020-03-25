@@ -16,7 +16,15 @@
   	    "infected":"Infected",
   	    "dead":"Dead",
   	    "recovered":"Recovered"
-	}
+	},
+
+  "navigation" : {
+        "home":"Home",
+        "daily_report":"Daily Report",
+        "information":"Information",
+        "contact":"Contact",
+        "about":"About Us"
+  }
 
 
 }
