@@ -1,0 +1,21 @@
+{
+
+	"daily_report": {
+	    "title": "Informe Diario",
+	    "choose_country": "Seleccionar País",
+
+  	    "argentina": "Argentina",
+  	    "spain": "España",
+  	    "italy": "Italia",
+  	    "germany": "Alemania",
+  	    "us": "Estados Unidos",
+  	    "china": "China",
+
+		"date":"Fecha",
+  	    "infected":"Infectados",
+  	    "dead":"Muertes",
+  	    "recovered":"Altas"
+
+	}
+
+}
