@@ -15,7 +15,8 @@
   	    "date":"Date",
   	    "infected":"Infected",
   	    "dead":"Dead",
-  	    "recovered":"Recovered"
+  	    "recovered":"Recovered",
+        "no_data_for":"No data for: "
 	},
 
   "navigation" : {

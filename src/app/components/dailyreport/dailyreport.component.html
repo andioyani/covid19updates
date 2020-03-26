@@ -1,15 +1,21 @@
   <div class="container mt-3">
     <h1 class="text-center">{{ 'daily_report.title' | translate }}</h1>        
 
-    <select class="custom-select" (change)="onChange($event.target.value)">
-      <option value="">{{ 'daily_report.choose_country' | translate }}</option>
+    <select class="custom-select" (change)="onChange($event.target.value)" *ngIf="countryList">
+      <option value="">{{ 'daily_report.choose_country' | translate }}</option>      
+      <option value="{{country}}" *ngFor="let country of countryList">{{ country }}</option>
+
+      <!--
       <option value="Argentina">{{ 'daily_report.argentina' | translate }}</option>
       <option value="Spain">{{ 'daily_report.spain' | translate }}</option>
       <option value="Italy">{{ 'daily_report.italy' | translate }}</option>
       <option value="Germany">{{ 'daily_report.germany' | translate }}</option>
       <option value="US">{{ 'daily_report.us' | translate }}</option>
       <option value="China">{{ 'daily_report.china' | translate }}</option>
+      -->
     </select>
+
+    <h2 class="text-center m-3" *ngIf="countrySelected && !confirmedCases">{{  'daily_report.no_data_for' | translate }} {{ countrySelected }}</h2>
 
     <table class="table" *ngIf="confirmedCases">
       <thead>
