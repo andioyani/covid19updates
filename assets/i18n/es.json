@@ -23,6 +23,16 @@
         "information":"Información Útil",
         "contact":"Contactos",
         "about":"Acerca de"
+  },
+
+  "home" : {
+    "title" : "Inicio",
+    "welcome_title" : "Reportes de CoVid 19",
+    "welcome_text" : "Aquí podrá consultar los reportes diarios de acuerdo a los informes de la Universidad John Hopkins",
+    "daily_report_link": "Ir al Informe Diario"
+
   }
+
+
 
 }

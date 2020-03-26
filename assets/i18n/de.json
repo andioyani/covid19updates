@@ -1,29 +1,28 @@
 {
 
-
 	"daily_report": {
-	    "title": "Daily Report",
-	    "choose_country": "Choose Country",
+	    "title": "Tagesbericht",
+	    "choose_country": "Land auswählen",
 
   	    "argentina": "Argentina",
   	    "spain": "Spain",
   	    "italy": "Italy",
-  	    "germany": "Germany",
-  	    "us": "United States",
+  	    "germany": "Deutschland",
+  	    "us": "USA",
   	    "china": "China",
 
-  	    "date":"Date",
-  	    "infected":"Infected",
-  	    "dead":"Dead",
-  	    "recovered":"Recovered"
+    		"date":"Datum",
+        "infected":"Infiziert",
+        "dead":"Todesfälle",
+        "recovered":"Wiederhergestellt"
 	},
 
   "navigation" : {
-        "home":"Home",
-        "daily_report":"Daily Report",
+        "home":"Wiederhergestellt",
+        "daily_report":"Tagesbericht",
         "information":"Information",
-        "contact":"Contact",
-        "about":"About Us"
+        "contact":"Kontakt",
+        "about":"Über"
   },
 
   "home" : {
